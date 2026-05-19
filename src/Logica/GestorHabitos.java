@@ -13,6 +13,20 @@ public class GestorHabitos {
         listaEjercicios = new ArrayList<>();
         
     }
+
+    public ArrayList<RegistroAgua> getListaAgua() {
+        return listaAgua;
+    }
+
+    public ArrayList<RegistroSuenho> getListaSuenho() {
+        return listaSuenho;
+    }
+
+    public ArrayList<RegistroEjercicio> getListaEjercicios() {
+        return listaEjercicios;
+    }
+    
+    
     
     public boolean registrarAgua(RegistroAgua agua){  
         if(agua.getCantidadAgua() <= 0){
@@ -102,6 +116,106 @@ public class GestorHabitos {
             }
         }
         return false;
+    }
+    
+    public boolean editarEjercicio(int posicion, String nuevoTipo, int nuevosMinutos, int nuevasCalorias){
+        if(posicion >= 0 && posicion < listaEjercicios.size()){
+            if(nuevoTipo.trim().isEmpty()){
+                return false;
+            }
+            
+            if(nuevosMinutos <= 0 || nuevosMinutos > 300){
+                return false;
+            }
+            
+            if(nuevasCalorias <= 0){
+                return false;
+            }
+            
+            RegistroEjercicio ejercicio = listaEjercicios.get(posicion);
+            ejercicio.setTipoEjercicio(nuevoTipo);
+            ejercicio.setCalorias(nuevasCalorias);
+            ejercicio.setMinutos(nuevosMinutos);
+            
+            return true;
+            
+        }
+        
+        return false;
+        
+    }
+    
+    public boolean eliminarAgua(int cantidad){
+        Iterator<RegistroAgua> iterator = listaAgua.iterator();
+        
+        while(iterator.hasNext()){
+            RegistroAgua agua = iterator.next();
+            
+            if(agua.getCantidadAgua() == cantidad){
+                
+                iterator.remove();
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public boolean eliminarSuenho(double horas){
+        Iterator<RegistroSuenho> iterator = listaSuenho.iterator();
+        
+        while(iterator.hasNext()){
+            
+            RegistroSuenho suenho = iterator.next();
+            
+            if(suenho.getHorasSuenho() == horas){
+                iterator.remove();
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public boolean eliminarEjercicio(String tipo){
+        
+        Iterator<RegistroEjercicio> iterator = listaEjercicios.iterator();
+        
+        while(iterator.hasNext()){
+            RegistroEjercicio ejercicio = iterator.next();
+            
+            if(ejercicio.getTipoEjercicio().equalsIgnoreCase(tipo)){
+                iterator.remove();
+            }
+            
+            return true;
+        }
+        
+        return false;
+    }
+    
+    public void mostrarHistorial(){
+        System.out.println("=========== HISTORIAL AGUA ===========");
+        
+        for(RegistroAgua agua : listaAgua){
+            System.out.println(agua.getCantidadAgua() + " Vasos - "
+            + agua.getFecha());
+            
+        }
+        System.out.println("=========== HISTORIAL EJERCICIO ===========");
+        
+        for(RegistroEjercicio ejercicio : listaEjercicios){
+            System.out.println(ejercicio.getTipoEjercicio() + " | "
+            + ejercicio.getMinutos() + " minutos "
+            + ejercicio.getCalorias() + " Calorias quemadas "
+            + ejercicio.getFecha());
+        }
+        System.out.println("=========== HISTORIAL SUENHO ===========");
+        
+        for(RegistroSuenho suenho : listaSuenho){
+            System.out.println(suenho.getHorasSuenho() + " Horas dormidas"
+            + suenho.getFecha());
+        }
+            
+        
     }
     
     
