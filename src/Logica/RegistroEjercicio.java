@@ -45,5 +45,9 @@ public class RegistroEjercicio {
         this.fecha = fecha;
     }
     
+    public String toString(){
+        return tipoEjercicio + " - " + minutos + " minutos - " + Calorias + " Calorias ";
+    }
+    
     
 }
