@@ -1,15 +1,21 @@
 package Logica;
 
 public class RegistroEjercicio {
+
     private String tipoEjercicio;
     private int minutos;
-    private int Calorias;
+    private int calorias;
     private String fecha;
 
-    public RegistroEjercicio(String tipoEjercicio, int minutos, int Calorias, String fecha) {
+    public RegistroEjercicio(
+            String tipoEjercicio,
+            int minutos,
+            int calorias,
+            String fecha) {
+
         this.tipoEjercicio = tipoEjercicio;
         this.minutos = minutos;
-        this.Calorias = Calorias;
+        this.calorias = calorias;
         this.fecha = fecha;
     }
 
@@ -17,37 +23,43 @@ public class RegistroEjercicio {
         return tipoEjercicio;
     }
 
-    public int getMinutos() {
-        return minutos;
-    }
-
-    public int getCalorias() {
-        return Calorias;
-    }
-
-    public String getFecha() {
-        return fecha;
-    }
-
     public void setTipoEjercicio(String tipoEjercicio) {
         this.tipoEjercicio = tipoEjercicio;
+    }
+
+    public int getMinutos() {
+        return minutos;
     }
 
     public void setMinutos(int minutos) {
         this.minutos = minutos;
     }
 
-    public void setCalorias(int Calorias) {
-        this.Calorias = Calorias;
+    public int getCalorias() {
+        return calorias;
+    }
+
+    public void setCalorias(int calorias) {
+        this.calorias = calorias;
+    }
+
+    public String getFecha() {
+        return fecha;
     }
 
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
-    
-    public String toString(){
-        return tipoEjercicio + " - " + minutos + " minutos - " + Calorias + " Calorias ";
+
+    @Override
+    public String toString() {
+
+        return tipoEjercicio
+                + " - "
+                + minutos
+                + " min - "
+                + calorias
+                + " calorías - "
+                + fecha;
     }
-    
-    
 }

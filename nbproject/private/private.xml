@@ -2,6 +2,23 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Logica/RegistroAgua.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Logica/RegistroSuenho.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Logica/RegistroEjercicio.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Logica/GestorHabitos.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Main/main.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Persistencia/ArchivoHabitos.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Presentacion/LoginGUI.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Presentacion/MenuGUI.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Presentacion/AguaGUI.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Presentacion/SuenhoGUI.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Presentacion/EjercicioGUI.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Presentacion/HistorialGUI.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Logica/Sistema.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Logica/SistemaUsuarios.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Presentacion/RegistroGUI.java</file>
+            <file>file:/C:/Users/Usuario/Documents/POO/HealthyTrack/HealthyTrack/src/Recursos/Ejercicio.png</file>
+        </group>
     </open-files>
 </project-private>
